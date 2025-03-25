@@ -30,27 +30,27 @@ app.use('/', indexRouter);
 
 // Serve HTML files
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.get('/form', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'form.html'));
+  res.sendFile(path.join(__dirname, 'public', 'form.html'));
 });
 
 app.get('/donation', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'donation.html'));
+  res.sendFile(path.join(__dirname, 'public', 'donation.html'));
 });
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'about.html'));
+  res.sendFile(path.join(__dirname, 'public', 'about.html'));
 });
 app.get('/programs', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'programs.html'));
+  res.sendFile(path.join(__dirname, 'public', 'programs.html'));
 });
 app.get('/involved', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'involved.html'));
+  res.sendFile(path.join(__dirname, 'public', 'involved.html'));
 });
 app.get('/contact', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'contact.html'));
+  res.sendFile(path.join(__dirname, 'public', 'contact.html'));
 });
 
 // Start server
